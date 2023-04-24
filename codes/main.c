@@ -5,7 +5,7 @@
 #include <time.h>
 #include <assert.h>
 #include "/home/krishna/cutilsmodus/c-utils/src/linkedlist.h"
-#include "/home/krishna/cutilsmodus/c-utils/src/linkedlist.c"
+
 
 typedef struct point {
     int x;
