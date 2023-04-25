@@ -227,29 +227,24 @@ ModusToolbox (MTB) is a software support tool from Infineon Technologies. It inc
 To use linked-lists Follow These steps:
 \begin{enumerate}
 \item Open ModusToolBox and Run Eclipse IDE
-\item Navigate to File---$>$New---$>$other
+\item Navigate to File---$>$New---$>$ModustoolBoxApplication
 \item It will show like below
 \begin{figure}[h]
-\includegraphics[width=\columnwidth]{../figs/sel.png}  
+\includegraphics[width=\columnwidth]{../figs/modus.png}  
 \end{figure}
 \vspace{10mm}
-\item Expand C/C++ and select C/C++ project,click next 
-\item Select C Managed Build,click next\\
-
-\vspace{10mm}
+\item Select appropriate board,click next
 \begin{figure}[h]
-\includegraphics[width=\columnwidth]{../figs/cmanage.png}  
+\includegraphics[width=\columnwidth]{../figs/m1.png}  
 \end{figure}
+\item Select getting started,empty app and click next
 \vspace{10mm}
-\item Select project name,project type and tool chain as ARM GCC,click next\\
-\begin{figure}[h]
-\includegraphics[width=\columnwidth]{../figs/pn.png} 
-\end{figure}
-\item Your project will be created.
 \end{enumerate}
+
 \vspace{10mm}
 \section{\textbf{Adding include directories}}
 \begin{enumerate}
+\item Clone all the {\href{https://github.com/barrust/c-utils}{cutils}} to mtbshared folder
 \item In eclipse select project which is located at the top
 \item Choose properties
 \item Then expand C/C++ General,Select paths and symbols.
@@ -259,7 +254,8 @@ To use linked-lists Follow These steps:
 \section{\textbf{Compile-Execute}}
 \begin{enumerate}
 \item Add {\href{https://github.com/KrishnaYadati/MTB-Linkedlist-port/blob/main/codes/main.c}{main.c}} to the newly created project.
- \item Compile using gcc main.c -o main
+ \item Build the application
+  \item Compile using gcc main.c -o main
   \item Execute using ./main
 \end{enumerate}
 \end{document}
